@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fundamental</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-mobile.css">
+    <link rel="stylesheet" href="css/style-laptop.css">
+    
+  </head>
+  <body>
+    <header>
+      <button onclick="toggleSidebar()"  aria-label="Show sidebar"><i class="fas fa-bars"></i></button>
+      <h1>
+	<img id="logo" src="img/logo.jpeg" alt="Fundament logo">
+	<span id="title">Fundamental</span>
+      </h1>
+      <input id="search-stock-header" type="text" placeholder="Search stock..." aria-label="search stock">
+      <span id="user-info">
+	<i class="fas fa-user"></i>
+	<i class="fas fa-chevron-down"></i>
+      </span>
+      <ul id="user-info-menu">
+	<li>logout</li>
+      </ul>
+    </header>
+    <nav id="sidebar">
+      <ul>
+	<li>
+	  <input id="search-stock-sidebar" type="text" placeholder="Search stock..." aria-label="search stock">
+	</li>
+	<li>
+	  <span class="main-item" onclick="openMainItem(this)"><a href="#">Getting started</a></span>
+	  <ul class="opened">
+	    <li class="item"><a href="WelcomePage.html">Welcome page</a></li>
+	    <li class="item"><a href="LearningFinance.html">Learning about finance</a></li>
+	    <li class="item"><a href="FundamentalsFundaments.html">Fundamental's fundaments</a></li>
+	  </ul>
+	</li>
+	<li>
+	  <span class="main-item" onclick="openMainItem(this)"><a href="#">Stock screening</a></span>
+	  <ul>
+	    <li class="item idle">No link to display here yet</li>
+	  </ul>
+	</li>
+	<li>
+	  <span class="main-item" onclick="openMainItem(this)"><a href="#">Advanced customization</a></span>
+	  <ul>
+	    <li class="item idle">No link to display here yet</li>
+	  </ul>
+	</li>
+      </ul>
+    </nav>
+    <main id="main-content">
+      <h2>Fundamental's fundaments</h2>
+      <article>
+	<h3>General process</h3>
+	<div class="reduced">
+	  <p>In order to use Fundamental, the investor must imagine a serie of steps to go from the whole stock market to a tiny group of stocks to pick to constitute a portfolio. The investor will associate each step with a group of indicator.</p>
+	  <p>When using Fundamental, the application will display, for each step, a list of stocks with the associated indicators. The investor will be able to select a list of stock based on the indicator value. This stock selection will be the entry point to display next step indicators.</p>
+	</div>
+	<a href="#" onclick="seeMore(this)">see more</a>
+      </article>
+    </main>
+  </body>
+  <script src="js/fundamental.js"></script>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fundamental</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-mobile.css">
+    <link rel="stylesheet" href="css/style-laptop.css">
+    
+  </head>
+  <body>
+    <header>
+      <button onclick="toggleSidebar()"  aria-label="Show sidebar"><i class="fas fa-bars"></i></button>
+      <h1>
+	<img id="logo" src="img/logo.jpeg" alt="Fundament logo">
+	<span id="title">Fundamental</span>
+      </h1>
+      <input id="search-stock-header" type="text" placeholder="Search stock..." aria-label="search stock">
+      <span id="user-info">
+	<i class="fas fa-user"></i>
+	<i class="fas fa-chevron-down"></i>
+      </span>
+      <ul id="user-info-menu">
+	<li>logout</li>
+      </ul>
+    </header>
+    <nav id="sidebar">
+      <ul>
+	<li>
+	  <input id="search-stock-sidebar" type="text" placeholder="Search stock..." aria-label="search stock">
+	</li>
+	<li>
+	  <span class="main-item" onclick="openMainItem(this)"><a href="#">Getting started</a></span>
+	  <ul class="opened">
+	    <li class="item"><a href="WelcomePage.html">Welcome page</a></li>
+	    <li class="item"><a href="LearningFinance.html">Learning about finance</a></li>
+	    <li class="item"><a href="FundamentalsFundaments.html">Fundamental's fundaments</a></li>
+	  </ul>
+	</li>
+	<li>
+	  <span class="main-item" onclick="openMainItem(this)"><a href="#">Stock screening</a></span>
+	  <ul>
+	    <li class="item idle">No link to display here yet</li>
+	  </ul>
+	</li>
+	<li>
+	  <span class="main-item" onclick="openMainItem(this)"><a href="#">Advanced customization</a></span>
+	  <ul>
+	    <li class="item idle">No link to display here yet</li>
+	  </ul>
+	</li>
+      </ul>
+    </nav>
+    <main id="main-content">
+      <h2>Learning about finance</h2>
+      <div id="searchdiv">
+	<form>
+	  <label for="level-filter">Level :</label>
+	  <select id="level-filter">
+	    <option value="">All</option>
+	    <option value="beginner">Beginner</option>
+	    <option value="intermediate">Intermediate</option>
+	    <option value="advanced">Advanced</option>
+	  </select>
+	  
+	  <label for="type-filter">Ressource type :</label>
+	  <select id="type-filter">
+	    <option value="">All</option>
+	    <option value="book">Books</option>
+	    <option value="website">Website</option>
+	  </select>
+	  <button onclick="filterContent()">Filter</button>
+	</form>
+      </div>
+      <ul>
+	<li class="beginner book">
+	  <a href="https://www.amazon.fr/Vous-pouvez-%C3%AAtre-g%C3%A9nie-bourse/dp/2361170043/ref=sr_1_3?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1MTUUUOSOJUO0&keywords=greenblatt+joel&qid=1557864924&s=gateway&sprefix=greenblatt+%2Caps%2C434&sr=8-3%22%3E%3Cimg%20src=%22https://m.media-amazon.com/images/I/41sHqd2AGeL._AC_UL436_.jpg"><img src="img/greenblatt.jpg" alt="You can beat the stock market book"/></a>
+	  <aside>This book will allow you to start learning about financial investment.</aside>
+	</li>
+
+	<li class="intermediate website">
+	  <a href="https://www.devenir-rentier.fr/"><img src="img/devenir-rentier.jpg" alt="Devenir rentier screenshot"/></a>
+	  <aside>This site will provide you with some interesting ressources. But, mainly, you will find great stock analysis in forum, exchanging with people having different but accurate points of view.</aside>
+	</li>
+
+	<li class="advanced book">
+	  <a href="https://www.amazon.fr/Security-Analysis-%C3%A9valuation-financi%C3%A8res-mobili%C3%A8res/dp/2361170051"><img src="img/security-analysis.jpg" alt="Security analysis book"/></a>
+	  <aside>This book is definitely a reference : 80 years old since the first edition but still applicable. You will go deep into account analysis and stock market analysis.</aside>
+	</li>
+
+	
+      </ul>
+
+    </main>
+  </body>
+  <script src="js/fundamental.js"></script>
+</html>
