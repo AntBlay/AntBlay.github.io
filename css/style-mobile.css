@@ -245,3 +245,8 @@ main li{
     box-shadow: 3px 3px 5px rgb(128,102,0);
     list-style:none;
 }
+
+#searchdiv span{
+    display:block;
+    padding:5px;
+}

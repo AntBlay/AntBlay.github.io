@@ -55,20 +55,23 @@
     <main id="main-content">
       <h2>Learning about finance</h2>
       <div id="searchdiv">
-	<label for="level-filter">Level :</label>
-	<select id="level-filter">
-	  <option value="">All</option>
-	  <option value="beginner">Beginner</option>
-	  <option value="intermediate">Intermediate</option>
-	  <option value="advanced">Advanced</option>
-	</select>
-	
-	<label for="type-filter">Ressource type :</label>
-	<select id="type-filter">
-	  <option value="">All</option>
-	  <option value="book">Books</option>
-	  <option value="website">Website</option>
-	</select>
+	<span>
+	  <label for="level-filter">Level :</label>
+	  <select id="level-filter">
+	    <option value="">All</option>
+	    <option value="beginner">Beginner</option>
+	    <option value="intermediate">Intermediate</option>
+	    <option value="advanced">Advanced</option>
+	  </select>
+	</span>
+	<span>
+	  <label for="type-filter">Ressource type :</label>
+	  <select id="type-filter">
+	    <option value="">All</option>
+	    <option value="book">Books</option>
+	    <option value="website">Website</option>
+	  </select>
+	</span>
 	<button onclick="filterContent()">Filter</button>
       </div>
       <ul>
